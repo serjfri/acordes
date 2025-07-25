@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 17 24 39;
+    --foreground: 243 244 246;
+
+    --card: 31 41 55;
+    --card-foreground: 243 244 246;
+
+    --popover: 31 41 55;
+    --popover-foreground: 243 244 246;
+
+    --primary: 37 99 235;
+    --primary-foreground: 243 244 246;
+
+    --secondary: 55 65 81;
+    --secondary-foreground: 243 244 246;
+
+    --muted: 55 65 81;
+    --muted-foreground: 156 163 175;
+
+    --accent: 55 65 81;
+    --accent-foreground: 243 244 246;
+
+    --destructive: 239 68 68;
+    --destructive-foreground: 243 244 246;
+
+    --border: 75 85 99;
+    --input: 75 85 99;
+    --ring: 37 99 235;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-gray-900 text-foreground min-h-screen;
+    /* RESTAURAMOS LA FUENTE INTER PARA TODO EL CUERPO */
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* NUEVA REGLA PARA EL SÍMBOLO # */
+.sharp-symbol {
+  font-family: 'monospace', 'Courier New', Courier, sans-serif; /* Usamos monospace para el símbolo # */
+}
+
+
+@layer components {
+  .guitar-string {
+    @apply relative bg-gray-500;
+    height: 2px;
+    border-radius: 1px;
+  }
+  
+  .fret-marker {
+    @apply absolute w-full bg-gray-600;
+    height: 2px;
+    border-radius: 1px;
+  }
+  
+  .finger-dot {
+    @apply absolute rounded-full border-2 cursor-pointer transition-all duration-200 hover:scale-110;
+    transform: translate(-50%, -50%);
+  }
+}
