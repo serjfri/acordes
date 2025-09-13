@@ -6,7 +6,7 @@
   "homepage": "https://serjfri.github.io/acordes/",
   "scripts": {
     "dev": "vite",
-"build": "cross-env NODE_ENV=production vite build",
+    "build": "cross-env NODE_ENV=production vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
