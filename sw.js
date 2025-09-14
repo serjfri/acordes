@@ -1,7 +1,7 @@
 const CACHE_NAME = 'mis-acordes-v1';
 const urlsToCache = [
-  '/acordes/',
-  '/acordes/public/icons/site.webmanifest'
+  '/',
+  '/manifest.json'
 ];
 
 self.addEventListener('install', (event) => {
