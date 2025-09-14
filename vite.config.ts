@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => ({
   // Solo usar /acordes/ cuando estés haciendo build, nunca en desarrollo
-base: "./",
+base: '/acordes/',
   server: {
     host: "::",
     port: 8080,
